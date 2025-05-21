@@ -15,7 +15,7 @@ class App extends Component {
 
     return (
       <div>
-        {/* <h1>My First React App!</h1> */}
+        <h1>My First React App!</h1>
         <Products />
         <h1>Hi there, {this.formatName(user)}!</h1>
         <Name />

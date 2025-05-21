@@ -8,7 +8,7 @@ class App extends Component {
     const isValid = true;
     return (
       <div>
-        <Products />
+        <h1>Chapter3 of learning bootstrp</h1>
         <Button variant="primary" disabled={!isValid}>Default</Button>
 
         <Rating rating="1" />
@@ -16,6 +16,9 @@ class App extends Component {
         <Rating rating="3" />
         <Rating rating="4" />
         <Rating rating="5" />
+        <br />
+        <hr />
+        <Products />
       </div>
     );
   }

@@ -1,22 +1,40 @@
-import React, { Component } from 'react';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Collapse from 'react-bootstrap/Collapse';
 
-class Products extends Component {
-  render() {
-    const products = [
-        "Learning React",
-        "Pro React",
-        "Beginning React"
-    ];
-    const listProducts = products.map((product) => 
-        <li key={product.toString()}>{product}</li>
-    );
-    return (
-      <div>
-        <h2>Products</h2>
-        <ul>{listProducts}</ul>
+function Products() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <div className="d-grid gap-2">
+        <Button
+          variant="secondary"
+          size="lg"
+          onClick={() => setOpen(!open)}
+          aria-controls="example-collapse-text"
+          aria-expanded={open}
+        >
+          Block button
+        </Button>
+
       </div>
-    );
-  }
+
+      <div style={{ minHeight: '150px' }}>
+        <Collapse in={open} dimension="width">
+          <div id="example-collapse-text">
+            <Card body style={{ width: '400px' }}>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </Card>
+          </div>
+        </Collapse>
+      </div>
+    </>
+  );
 }
 
 export default Products;
