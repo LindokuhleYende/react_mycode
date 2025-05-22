@@ -18,27 +18,27 @@ class Rating extends Component {
                 {this.state.rating >= 1 ? (
                     <IoIosStar onClick={this.handleClick.bind(this, 1)} />
                 ) : (
-                    <IoIosStarOutline onClick={this.handleClick.bind(this, 1)} />
+                    <IoIosStarOutline onClick={this.handleClick.bind(this, 1)}/>
                 )}
                 {this.state.rating >= 2 ? (
                     <IoIosStar onClick={this.handleClick.bind(this, 2)} />
                 ) : (
-                    <IoIosStarOutline onClick={this.handleClick.bind(this, 2)} />
+                    <IoIosStarOutline onClick={this.handleClick.bind(this, 2)}/>
                 )}
                 {this.state.rating >= 3 ? (
                     <IoIosStar onClick={this.handleClick.bind(this, 3)} />
                 ) : (
-                    <IoIosStarOutline onClick={this.handleClick.bind(this, 3)} />
+                    <IoIosStarOutline onClick={this.handleClick.bind(this, 3)}/>
                 )}
                 {this.state.rating >= 4 ? (
                     <IoIosStar onClick={this.handleClick.bind(this, 4)} />
                 ) : (
-                    <IoIosStarOutline onClick={this.handleClick.bind(this, 4)} />
+                    <IoIosStarOutline onClick={this.handleClick.bind(this, 4)}/>
                 )}
                 {this.state.rating >= 5 ? (
                     <IoIosStar onClick={this.handleClick.bind(this, 5)} />
                 ) : (
-                    <IoIosStarOutline onClick={this.handleClick.bind(this, 5)} />
+                    <IoIosStarOutline onClick={this.handleClick.bind(this, 5)}/>
                 )}
             </div>
         );
@@ -46,10 +46,9 @@ class Rating extends Component {
 }
 
 export default Rating;
+
 const styles = {
     starStyle: {
-        color: "orange",
-        backgroundColor: "purple",
-        margin: "20px 10px 20px"
+        color: "orange"
     }
 };

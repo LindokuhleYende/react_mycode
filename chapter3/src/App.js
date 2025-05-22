@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     const isValid = true;
     return (
-      <div>
-        <h1>Chapter3 of learning bootstrp</h1>
+      <div style={styles.h1Style}>
+        <h1>Learning React: Chapter3</h1>
         <Button variant="primary" disabled={!isValid}>Default</Button>
 
         <Rating rating="1" />
@@ -25,3 +25,11 @@ class App extends Component {
 }
 
 export default App;
+
+const styles = {
+  h1Style: {
+    color: "blue",
+    backgroundColor: "beige",
+    textAlign: "center"
+  }
+}
