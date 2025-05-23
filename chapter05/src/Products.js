@@ -50,24 +50,13 @@ class Products extends Component {
       <Product key={product.productName} data={product} />
     );
     return (
-      <div style={styles.productStyle}>
-        <ul>{listProducts}</ul>
+      <div>
+        {listProducts.length > 0 ?
+          (<ul>{listProducts}</ul>): (<ul>No products to display</ul>)
+        }
       </div>
     );
   }
 }
 
 export default Products;
-
-const styles = {
-  productStyle: {
-    backgroundColor: "purple",
-    justifyContent: "center",
-    alignItems: "center",
-    display: "block",
-    margin: "10px 50px 50px 50px",
-    padding: "10px 200px 50px",
-    textAlign: "center",
-    width: "100%"
-  }
-}
