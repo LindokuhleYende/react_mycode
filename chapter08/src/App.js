@@ -4,6 +4,7 @@ import GitHubUser from './GitHubUser';
 import Dessert from './Dessert';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
+import Contact from './Contact';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class Header extends Component {
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/github">GitHub</Nav.Link>
                 <Nav.Link href="/dessert">Table</Nav.Link>
+                <Nav.Link href="/contacts">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -37,6 +39,7 @@ class Header extends Component {
             <Route path="/github" component={GitHub} />
             <Route exact path="/" component={Home} />
             <Route exact path="/dessert" component={Dessert} />
+            <Route exact path="/contacts" component={Contact} />
             <Route path="/*" component={NotFound} />
           </Switch>
         </div>
