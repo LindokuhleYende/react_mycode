@@ -5,6 +5,8 @@ import Dessert from './Dessert';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import Contact from './Contact';
+import logo from "./logo.svg"
+import "./App.css"
 
 class App extends Component {
   render() {
@@ -52,8 +54,9 @@ class Header extends Component {
 class Home extends Component {
   render() {
     return (
-      <div>
-        Home
+      <div style={styles.homeStyle}>
+        <h1>Welcome to my react app</h1>
+        <img src={logo} className="App-logo" alt="logo" />
       </div>
     )
   }
@@ -61,7 +64,14 @@ class Home extends Component {
 
 class NotFound extends Component {
   render() {
-    return <div>Not Found</div>
+    return <div style={styles.homeStyle}>Not Found</div>
   }
 }
 export default App;
+
+const styles = {
+  homeStyle: {
+    color: "darkPurple",
+    backgroundColor: "darkBlue"
+  }
+}
