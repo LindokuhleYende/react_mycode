@@ -1,0 +1,51 @@
+[
+    {
+        "id": 80,
+    "username": "Cadee",
+    "email": "cadee@codecollege.com"
+    },
+
+    {
+    "id": 70,
+    "username": "Courtney",
+    "email": "cooks@codecollege.com"
+    },
+    {
+        "id": 99,
+        "username": "Ethan",
+        "email":"ethan@codecollege.com"
+        },
+    
+        {
+            "id": 45,
+            "username": "Lindokuhle",
+            "email":"Lindokuhle@codecollege.com"
+            },
+        
+            {
+                "id": 98,
+                "username": "Marvelous",
+                "email":"marvelous@codecollege.com"
+                },
+            {
+                "id": 88,
+                "username": "Mieke",
+                "email":"mieke@codecollege.com"
+                    },
+            {
+             "id": 54,
+            "username": "Piere",
+            "email":"piere@codecollege.com"
+                },
+                {
+                    "id": 65,
+                   "username": "Tom",
+                   "email":"tom@codecollege.com"
+                       },
+                       {
+                        "id": 24,
+                       "username": "Ronny",
+                       "email":"ronny@codecollege.com"
+                           }
+
+]
