@@ -1,20 +1,18 @@
 import React from 'react'
 import Products from './Products'
+import FormatName from './FormatName'
 
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName
-}
 
 function App() {
   const user = {
-    firstName: 'Greg',
-    lastName: 'Tan',
-    imageUrl:'https://picsum.photos/200/300'
+    firstName: 'Lee',
+    lastName: 'Yende',
   }
 
   return (
     <div>
       <Products />
+      <FormatName user={user} />
     </div>
   )
 }
