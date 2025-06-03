@@ -16,10 +16,10 @@ const App = () => {
   //makes app run faster
   // useEffect(() => {
   //   fetch(requested)
-  //   .then(response => response.json())
-  //   .then(data => setData(data)) // data array is then populated with data from collection
+  //     .then(response => response.json())
+  //     .then(data => setData(data)) // data array is then populated with data from collection
   // }, [requested]);
-  //[] :data gets rendered the first time 
+  // [] //:data gets rendered the first time 
 
   return (
     <div>
@@ -40,8 +40,8 @@ const App = () => {
       Requested: {requested}
       <ul>
         {data.map(el => (
-            <li key={el.id}>{el.title || el.name}</li>
-          ))}
+          <li key={el.id}>{el.title || el.name}</li>
+        ))}
       </ul>
     </div>
   );
